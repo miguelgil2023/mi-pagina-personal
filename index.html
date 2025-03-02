@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Personal</title>
     <link rel="stylesheet" href="styles.css">
-    <img src="images/miguel.jpg" alt="Foto de perfil" width="200">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a mi página personal</h1>
+        <div class="perfil">
+            <img src="images/miguel.jpg" alt="Foto de perfil" class="foto-perfil">
+            <h1>Bienvenido a mi página personal</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -19,51 +21,70 @@
         </nav>
     </header>
 
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Hola, soy [MIGUEL ANGEL GIL FLORES ]. Datos Personales Apellido y Nombres : Gil Flores Miguel Ángel Fecha de Nacimiento : 18 /04/1967 Domicilio : Calle Huantar Mz. K-3 LOT. 24 Urb. Los Naranjos Los Olivos. Teléfono : 5214426 / 6329165 / 996910210 claro E mail : mgilflores7@gmail.com : miguelangelgilflores2014@yahoo.es DNI : 06269612 SPP : 245781MGLR3-AFP-INTEGRA Fecha de Afiliación : 20 de mayo de 1993 Página web personal https://sites.google.com/site/miguelangelgilflores/ Profesión : Licenciado en Educación Física Grado académico : Dr. Ciencias de la Educación Grados Académicos y Títulos Profesional 
-            ● Bachiller en Educación por la Universidad Nacional Mayor de San Marcos, N°45738 B-DDOO con fecha con fecha 22/03/2002 de conformidad con la R.D. N°00582. 
-            ● Licenciado en educación física por la Universidad Nacional de San Marcos. N°69067 R_DDOO con fecha 22/032002 de conformidad con la R.D. N.00582 
-            ● Magíster en Ciencias de la Educación con mención en CIENCIAS DEL DEPORTE por la Universidad Nacional de Educación Enrique Guzmán y Valle. Resolución Nº 1260-2006-EPG-UNE 
-            ● Dr. EN CIENCIAS DE LA EDUCACIÓN por la Universidad Nacional de Educación Enrique Guzmán y Valle .CON FECHA 04 DE MAYO DEL 2009 (RES. N° 1598-2009-R.UNE). 
-            ● Título de Profesor de Educación Física N°33546-PDOO, por el Instituto Superior Pedagógico Privado Víctor Andrés Belúnde de conformidad con la RD. N°1784 del 18/04/90 al 13/06/1997. 
-            ● Título de Técnico en Administración N°58669-ADDOO, por el Instituto Superior Tecnológico Estatal Argentina de conformidad con la RD. N°886 del 04/041/19 Experiencia Docente Universitaria 
-            ● Constancia como docente de la Escuela Profesional de Educacion Fisica de la Universidad Nacional del Callao 2025.</p>
-    </section>
+    <main>
+        <!-- Sección Sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Hola, soy <strong>Miguel Ángel Gil Flores</strong>, Licenciado en Educación Física y Doctor en Ciencias de la Educación. A continuación, algunos datos personales:</p>
+            <ul class="datos-personales">
+                <li><strong>Fecha de Nacimiento:</strong> 18/04/1967</li>
+                <li><strong>Domicilio:</strong> Calle Huantar Mz. K-3 LOT. 24 Urb. Los Naranjos, Los Olivos.</li>
+                <li><strong>Teléfono:</strong> 5214426 / 6329165 / 996910210</li>
+                <li><strong>Email:</strong> mgilflores7@gmail.com | miguelangelgilflores2014@yahoo.es</li>
+                <li><strong>DNI:</strong> 06269612</li>
+                <li><strong>Página web:</strong> <a href="https://sites.google.com/site/miguelangelgilflores/">Visitar sitio</a></li>
+            </ul>
+            <h3>Grados Académicos y Títulos Profesionales</h3>
+            <ul class="grados-academicos">
+                <li><strong>Bachiller en Educación:</strong> Universidad Nacional Mayor de San Marcos (2002).</li>
+                <li><strong>Licenciado en Educación Física:</strong> Universidad Nacional de San Marcos (2002).</li>
+                <li><strong>Magíster en Ciencias de la Educación:</strong> Universidad Nacional de Educación "Enrique Guzmán y Valle" (2006).</li>
+                <li><strong>Doctor en Ciencias de la Educación:</strong> Universidad Nacional de Educación "Enrique Guzmán y Valle" (2009).</li>
+                <li><strong>Profesor de Educación Física:</strong> Instituto Superior Pedagógico Privado "Víctor Andrés Belúnde" (1997).</li>
+            </ul>
+        </section>
 
-<section id="proyectos">
-    <h2>Mis proyectos</h2>
-    <p>Aquí puedes ver algunos de los proyectos en los que he trabajado:</p>
-    <ul>
-        <!-- Proyecto 1: Gimnasia -->
-        <li>
-            <strong>Gimnasia:</strong> 
-            <p>Este proyecto se enfocó en el desarrollo de un programa de entrenamiento integral para gimnastas juveniles. Se diseñaron rutinas personalizadas que combinan fuerza, flexibilidad y coordinación, con el objetivo de mejorar el rendimiento atlético y prevenir lesiones. Además, se implementó un sistema de seguimiento para evaluar el progreso de los participantes.</p>
-        </li>
+        <!-- Sección Proyectos -->
+        <section id="proyectos">
+            <h2>Mis proyectos</h2>
+            <p>Aquí puedes ver algunos de los proyectos en los que he trabajado:</p>
+            <ul class="proyectos-lista">
+                <li>
+                    <strong>Gimnasia:</strong>
+                    <p>Desarrollo de un programa de entrenamiento integral para gimnastas juveniles. Se diseñaron rutinas personalizadas que combinan fuerza, flexibilidad y coordinación.</p>
+                </li>
+                <li>
+                    <strong>Básquetbol:</strong>
+                    <p>Creación de un plan estratégico para equipos amateur. Se trabajó en habilidades técnicas y organización de torneos locales.</p>
+                </li>
+                <li>
+                    <strong>Balonmano:</strong>
+                    <p>Capacitación de jugadores principiantes en reglas y técnicas básicas. Promoción de la inclusión de mujeres en el deporte.</p>
+                </li>
+            </ul>
+            <a href="https://revistatribunal.org/index.php/tribunal/article/view/347" target="_blank" class="boton-articulo">Visitar artículo</a>
+        </section>
 
-        <!-- Proyecto 2: Básquetbol -->
-        <li>
-            <strong>Básquetbol:</strong> 
-            <p>En este proyecto, se creó un plan estratégico para equipos de básquetbol amateur. Se trabajó en la mejora de habilidades técnicas como el tiro, el pase y el dribbling, además de fortalecer el trabajo en equipo y la comunicación dentro de la cancha. También se organizaron torneos locales para fomentar la participación comunitaria.</p>
-        </li>
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post" class="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-        <!-- Proyecto 3: Balonmano -->
-        <li>
-            <strong>Balonmano:</strong> 
-            <p>El proyecto de balonmano se centró en la capacitación de jugadores principiantes en las reglas y técnicas básicas del deporte. Se desarrollaron sesiones prácticas para mejorar la precisión en los lanzamientos, la velocidad y la toma de decisiones durante el juego. Además, se promovió la inclusión de mujeres en el deporte mediante programas específicos.</p>
-        </li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-        <!-- Artículo relacionado -->
-        <a href="https://revistatribunal.org/index.php/tribunal/article/view/347" target="_blank">Visitar artículo</a>
-    </ul>
-</section>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-<section id="contacto">
-    <!-- Aquí va la sección de contacto -->
-</section>
+                <button type="submit" class="boton-enviar">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 [MIGUEL ANGEL GIL FLORES]. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Miguel Ángel Gil Flores. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
