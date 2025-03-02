@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,30 +34,7 @@ section {
     margin: 20px;
     background-color: white;
     border-radius: 8px;
-      <section id="proyectos">
-        <h2>Mis proyectos</h2>
-        <p>Aquí puedes ver algunos de los proyectos en los que he trabajado:</p>
-        <ul>
-            <!-- Proyecto 1: Gimnasia -->
-            <li>
-                <strong>Gimnasia</strong> 
-                <p>Este proyecto se enfocó en el desarrollo de un programa de entrenamiento integral para gimnastas juveniles. Se diseñaron rutinas personalizadas que combinan fuerza, flexibilidad y coordinación, con el objetivo de mejorar el rendimiento atlético y prevenir lesiones. Además, se implementó un sistema de seguimiento para evaluar el progreso de los participantes.</p>
-            </li>
-
-            <!-- Proyecto 2: Básquetbol -->
-            <li>
-                <strong>Básquetbol</strong> 
-                <p>En este proyecto, se creó un plan estratégico para equipos de básquetbol amateur. Se trabajó en la mejora de habilidades técnicas como el tiro, el pase y el dribbling, además de fortalecer el trabajo en equipo y la comunicación dentro de la cancha. También se organizaron torneos locales para fomentar la participación comunitaria.</p>
-            </li>
-
-            <!-- Proyecto 3: Balonmano -->
-            <li>
-                <strong>Balonmano</strong> 
-                <p>El proyecto de balonmano se centró en la capacitación de jugadores principiantes en las reglas y técnicas básicas del deporte. Se desarrollaron sesiones prácticas para mejorar la precisión en los lanzamientos, la velocidad y la toma de decisiones durante el juego. Además, se promovió la inclusión de mujeres en el deporte mediante programas específicos.</p>
-            </li>
-        </ul>
-        <a href="https://revistatribunal.org/index.php/tribunal/article/view/347" target="_blank">Visitar artículo</a>
-    </section>
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -67,4 +45,56 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Mejoras específicas para la sección "Mis proyectos" */
+#proyectos h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#proyectos p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#proyectos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#proyectos li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#proyectos li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#proyectos strong {
+    color: #007BFF;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#proyectos a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#proyectos a:hover {
+    color: #218838;
 }
