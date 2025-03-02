@@ -3,38 +3,144 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
     background-color: #007BFF;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
+}
+
+header .perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFC107;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul.datos-personales, ul.grados-academicos {
+    list-style: none;
+    padding: 0;
+}
+
+ul.datos-personales li, ul.grados-academicos li {
+    margin-bottom: 10px;
+}
+
+.proyectos-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.proyectos-lista li {
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proyectos-lista li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boton-articulo {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-articulo:hover {
+    background-color: #218838;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.boton-enviar {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #0056b3;
 }
 
 footer {
@@ -42,59 +148,4 @@ footer {
     padding: 10px;
     background-color: #007BFF;
     color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Mejoras específicas para la sección "Mis proyectos" */
-#proyectos h2 {
-    color: #007BFF;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#proyectos p {
-    text-align: center;
-    color: #555;
-    margin-bottom: 30px;
-}
-
-#proyectos ul {
-    list-style: none;
-    padding: 0;
-}
-
-#proyectos li {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#proyectos li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#proyectos strong {
-    color: #007BFF;
-    font-size: 1.2em;
-    display: block;
-    margin-bottom: 10px;
-}
-
-#proyectos a {
-    display: inline-block;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #28a745;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-#proyectos a:hover {
-    color: #218838;
 }
